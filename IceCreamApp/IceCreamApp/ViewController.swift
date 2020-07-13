@@ -7,28 +7,53 @@
 //
 
 import UIKit
+import IceCreamListing
 import IceCreamDetail
 
 class ViewController: UIViewController {
-    private var iceCreamView: IceCreamDetailViewController!
+    private lazy var iceCreamDetailView: IceCreamDetailViewController = {
+        let view = IceCreamDetailDI.instance().view
+        view.delegate = self
+        return view
+    }()
+    
+    private lazy var iceCreamListingView: IceCreamListingViewController = {
+        let view = IceCreamListingDI.instance().view
+        view.delegate = self
+        return view
+    }()
     
     @IBAction func clickMeIsPressed(_ sender: Any) {
-        let assembly = IceCreamDetailDI.instance()
-        iceCreamView = assembly.view
-        iceCreamView.id = "123"
-        iceCreamView.delegate = self
-        navigationController?.pushViewController(iceCreamView, animated: true)
+        navigationController?.pushViewController(iceCreamListingView, animated: true)
     }
 }
 
 extension ViewController: IceCreamDetailViewControllerDelegate {
     func loadIceCream(id: String) {
-        DispatchQueue.global(qos: .background).asyncAfter(deadline: .now() + .seconds(2)) { [weak self] in
-            DispatchQueue.main.async {
-                let viewModel = IceCreamViewModel(name: "Морожено",
-                                                  image: UIImage(named: "icecream")!)
-                self?.iceCreamView.iceCreamLoaded(viewModel)
-            }
+    }
+}
+
+extension ViewController: IceCreamListingViewControllerDelegate {
+    func loadIceCreams() {
+        DispatchQueue.main.asyncAfter(deadline: .now() + .seconds(2)) { [weak self] in
+            let viewModel1 = IceCreamListingViewModel(name: "Вкусное мороженое",
+                                                      image: UIImage(named: "icecream")!)
+            let viewModel2 = IceCreamListingViewModel(name: "Мороженое в стаканчике",
+                                                      image: UIImage(named: "icecream1")!)
+            let viewModel3 = IceCreamListingViewModel(name: "Мороженое с лимоном",
+                                                      image: UIImage(named: "icecream2")!)
+            let viewModel4 = IceCreamListingViewModel(name: "Трипл мороженое",
+                                                      image: UIImage(named: "icecream3")!)
+            let viewModel5 = IceCreamListingViewModel(name: "Шоколадное мороженое",
+                                                      image: UIImage(named: "icecream4")!)
+            let viewModel6 = IceCreamListingViewModel(name: "Ванильное мороженое",
+                                                      image: UIImage(named: "icecream5")!)
+            
+            self?.iceCreamListingView.iceCreamsLoaded([viewModel1,
+                                                 viewModel2,
+                                                 viewModel3,
+                                                 viewModel4,
+                                                 viewModel5, viewModel6])
         }
     }
 }

@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="C50-zg-hse">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Магазин мороженого-->
+        <scene sceneID="mh3-fA-weq">
+            <objects>
+                <viewController id="C50-zg-hse" customClass="IceCreamListingViewController" customModule="IceCreamListing" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="StM-Ew-IzF">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="7RK-Xb-dB6">
+                                <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="IceCreamCell" id="t8k-Ze-kua" customClass="IceCreamCell" customModule="IceCreamListing" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="414" height="140.5"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="t8k-Ze-kua" id="Iqw-eW-y8c">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="140.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="KJg-TK-CQV">
+                                                    <rect key="frame" x="20" y="20" width="100" height="100.5"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="100" id="Iyf-FI-Xpr"/>
+                                                        <constraint firstAttribute="width" secondItem="KJg-TK-CQV" secondAttribute="height" multiplier="1:1" id="hYi-ik-Eu0"/>
+                                                    </constraints>
+                                                </imageView>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xdg-Kp-VEx">
+                                                    <rect key="frame" x="128" y="28" width="266" height="18.5"/>
+                                                    <fontDescription key="fontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="KJg-TK-CQV" firstAttribute="top" secondItem="Iqw-eW-y8c" secondAttribute="top" constant="20" symbolic="YES" id="3lt-2M-rTv"/>
+                                                <constraint firstAttribute="trailing" secondItem="xdg-Kp-VEx" secondAttribute="trailing" constant="20" symbolic="YES" id="9mJ-m1-JSq"/>
+                                                <constraint firstAttribute="bottom" secondItem="KJg-TK-CQV" secondAttribute="bottom" constant="20" symbolic="YES" id="QOM-2v-9Ui"/>
+                                                <constraint firstItem="xdg-Kp-VEx" firstAttribute="top" secondItem="KJg-TK-CQV" secondAttribute="top" constant="8" id="Rov-5X-8N1"/>
+                                                <constraint firstItem="KJg-TK-CQV" firstAttribute="leading" secondItem="Iqw-eW-y8c" secondAttribute="leading" constant="20" symbolic="YES" id="W0m-n2-L3K"/>
+                                                <constraint firstItem="xdg-Kp-VEx" firstAttribute="leading" secondItem="KJg-TK-CQV" secondAttribute="trailing" constant="8" symbolic="YES" id="dix-xA-aYJ"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="iceCreamImage" destination="KJg-TK-CQV" id="c6O-cx-sed"/>
+                                            <outlet property="iceCreamName" destination="xdg-Kp-VEx" id="5hf-z4-neJ"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="C50-zg-hse" id="N5l-yu-FQN"/>
+                                    <outlet property="delegate" destination="C50-zg-hse" id="oJd-nc-Juj"/>
+                                </connections>
+                            </tableView>
+                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" animating="YES" style="medium" translatesAutoresizingMaskIntoConstraints="NO" id="M3R-cL-HQ0">
+                                <rect key="frame" x="197" y="443" width="20" height="20"/>
+                            </activityIndicatorView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="C2L-UC-2pV" firstAttribute="trailing" secondItem="7RK-Xb-dB6" secondAttribute="trailing" id="U8j-1Z-44a"/>
+                            <constraint firstItem="M3R-cL-HQ0" firstAttribute="centerY" secondItem="C2L-UC-2pV" secondAttribute="centerY" id="VpG-1v-r1y"/>
+                            <constraint firstItem="7RK-Xb-dB6" firstAttribute="leading" secondItem="C2L-UC-2pV" secondAttribute="leading" id="XVO-2T-pL5"/>
+                            <constraint firstItem="M3R-cL-HQ0" firstAttribute="centerX" secondItem="C2L-UC-2pV" secondAttribute="centerX" id="YI9-BV-tUA"/>
+                            <constraint firstItem="C2L-UC-2pV" firstAttribute="bottom" secondItem="7RK-Xb-dB6" secondAttribute="bottom" id="cPN-56-9Y2"/>
+                            <constraint firstItem="7RK-Xb-dB6" firstAttribute="top" secondItem="C2L-UC-2pV" secondAttribute="top" id="lCn-kC-0iH"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="C2L-UC-2pV"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Магазин мороженого" id="sWV-Wq-p6l"/>
+                    <connections>
+                        <outlet property="activityIndicator" destination="M3R-cL-HQ0" id="q7Y-AA-lOQ"/>
+                        <outlet property="tableView" destination="7RK-Xb-dB6" id="HvZ-4u-t2W"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="3Dg-de-fxW" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="910.14492753623199" y="30.803571428571427"/>
+        </scene>
+    </scenes>
+</document>

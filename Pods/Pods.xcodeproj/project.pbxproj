@@ -7,12 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		01E117C1000BC6AB75250361BC83FAFC /* Pods-IceCreamDetail-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = B900AC8C59252688ADF03E5F2AAAF9AF /* Pods-IceCreamDetail-dummy.m */; };
-		0EA8FFCCF3004BDE86456728AA0BFB05 /* Pods-IceCreamApp-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = F827485AC52F85780267A9D4543B9465 /* Pods-IceCreamApp-dummy.m */; };
-		1D8CBE5905134E157BB1F633A2DD7BAD /* Pods-IceCreamApp-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 24473874C2E533A2C1417F31266996A4 /* Pods-IceCreamApp-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		01E117C1000BC6AB75250361BC83FAFC /* Pods-IceCreamDetail-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 1562F188DC58322081AA48B3FFF45D64 /* Pods-IceCreamDetail-dummy.m */; };
+		0EA8FFCCF3004BDE86456728AA0BFB05 /* Pods-IceCreamApp-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 808F7DA414251A898F74B2FBD2E0865D /* Pods-IceCreamApp-dummy.m */; };
+		1D8CBE5905134E157BB1F633A2DD7BAD /* Pods-IceCreamApp-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 1C7CE87B70FB4F049EF49F4CBA8B2895 /* Pods-IceCreamApp-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		4263F6F43D53B21F19BBDCC7E4E2EA27 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
-		9C6DCD745BBA072A61566514C1A35806 /* Pods-IceCreamDetail-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = ECB303A5C1A229215FD9CFCCF620E7E8 /* Pods-IceCreamDetail-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		763E65150378940E77F150B64ED14A3B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
+		9C6DCD745BBA072A61566514C1A35806 /* Pods-IceCreamDetail-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = A424D2A6D302EA46569E65DA5A8112A5 /* Pods-IceCreamDetail-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		A2714CB7229C0AEB6668A4BF2CCD2C21 /* EasyDi.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7686D2F266FC3410464644764CB0BD5E /* EasyDi.swift */; };
+		BB73B56CA258EB531EC44EDB17EF6212 /* Pods-IceCreamListing-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = EAEF11E10748A75914DE4C344E7528A8 /* Pods-IceCreamListing-dummy.m */; };
+		BF02736AECDC116746DAC43416E3A87C /* Pods-IceCreamListing-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 0C6F15140C842064BFD5501A38457E2A /* Pods-IceCreamListing-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		EAD0ADF6E7087832D1B39A9C01196C95 /* EasyDi-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = A31315688F3D9D5597C94165D4A3F59E /* EasyDi-dummy.m */; };
 		F1AAE7DDCFF46AEFBEB9E3780A04172A /* EasyDi-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 065E4F4E4B587B8ABA7001B0273BA37E /* EasyDi-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		FBE1E53B2B3C899FB5CFA0F26ACCEABD /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
@@ -20,6 +23,13 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		6EAECCAD3F8F856518121161C00E0B77 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F16E0DD713AAB4501164ACC1E67208D7;
+			remoteInfo = EasyDi;
+		};
 		7059317B8A9C5AB0AC5F0E0653049A6C /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
@@ -38,34 +48,43 @@
 
 /* Begin PBXFileReference section */
 		018C11B489600B3F4266DBE5F4AF532B /* Pods_IceCreamApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_IceCreamApp.framework; path = "Pods-IceCreamApp.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		02D919C1C2B6E28259333C1AE155A11D /* Pods-IceCreamApp-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-IceCreamApp-frameworks.sh"; sourceTree = "<group>"; };
 		065E4F4E4B587B8ABA7001B0273BA37E /* EasyDi-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "EasyDi-umbrella.h"; sourceTree = "<group>"; };
-		0BCE64DAFE397D48912CC7E5E9B22373 /* Pods-IceCreamDetail-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-IceCreamDetail-acknowledgements.plist"; sourceTree = "<group>"; };
 		0C4E23CF96C02D5995A355378938C881 /* EasyDi-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "EasyDi-Info.plist"; sourceTree = "<group>"; };
-		11D42D5597F620B451FBD5B41D518E39 /* Pods-IceCreamDetail.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-IceCreamDetail.debug.xcconfig"; sourceTree = "<group>"; };
-		16CBD23AA2E6F75670BFCAE734F6C864 /* Pods-IceCreamDetail-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-IceCreamDetail-acknowledgements.markdown"; sourceTree = "<group>"; };
-		24473874C2E533A2C1417F31266996A4 /* Pods-IceCreamApp-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-IceCreamApp-umbrella.h"; sourceTree = "<group>"; };
+		0C6F15140C842064BFD5501A38457E2A /* Pods-IceCreamListing-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-IceCreamListing-umbrella.h"; sourceTree = "<group>"; };
+		0EDC3D410011755C103DDEF3CE392E12 /* Pods-IceCreamListing.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-IceCreamListing.modulemap"; sourceTree = "<group>"; };
+		1562F188DC58322081AA48B3FFF45D64 /* Pods-IceCreamDetail-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-IceCreamDetail-dummy.m"; sourceTree = "<group>"; };
+		1C7CE87B70FB4F049EF49F4CBA8B2895 /* Pods-IceCreamApp-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-IceCreamApp-umbrella.h"; sourceTree = "<group>"; };
 		3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
-		365A0D75234255931B5DACECD5DFB990 /* Pods-IceCreamApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-IceCreamApp.release.xcconfig"; sourceTree = "<group>"; };
+		361D0462C9150646F1787C88DB5368EC /* Pods-IceCreamDetail.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-IceCreamDetail.debug.xcconfig"; sourceTree = "<group>"; };
+		3ABA72355838ED1F4210A0659F29F1B6 /* Pods-IceCreamDetail.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-IceCreamDetail.modulemap"; sourceTree = "<group>"; };
 		3EAB84E0830541CF0ECF2CD31BFC9739 /* EasyDi.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = EasyDi.release.xcconfig; sourceTree = "<group>"; };
-		47C23CB6E2B7ED819797859E9EC86E5F /* Pods-IceCreamDetail.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-IceCreamDetail.release.xcconfig"; sourceTree = "<group>"; };
-		4D5A9B9C265F1F119439BE3EB02A7099 /* Pods-IceCreamApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-IceCreamApp.debug.xcconfig"; sourceTree = "<group>"; };
-		4DC3C83AB6B3C75CF2D59A61E1B08033 /* Pods-IceCreamApp-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-IceCreamApp-frameworks.sh"; sourceTree = "<group>"; };
+		409A1B13249FA4535A93282521B351C0 /* Pods-IceCreamApp-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-IceCreamApp-acknowledgements.plist"; sourceTree = "<group>"; };
+		41EDF0F823412A2744A48FE2E09194DA /* Pods-IceCreamDetail-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-IceCreamDetail-acknowledgements.plist"; sourceTree = "<group>"; };
+		45BAE95965970BBBB612B35B028D7873 /* Pods-IceCreamApp-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-IceCreamApp-Info.plist"; sourceTree = "<group>"; };
+		486B9E2BCB6728CA44F10C7E03318287 /* Pods-IceCreamListing.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-IceCreamListing.release.xcconfig"; sourceTree = "<group>"; };
+		6F759CD9C7DDA194F1222C729C090FBE /* Pods-IceCreamApp.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-IceCreamApp.modulemap"; sourceTree = "<group>"; };
 		6FD7285A14B68B70AC5D7DE0E3F7828B /* EasyDi.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = EasyDi.modulemap; sourceTree = "<group>"; };
 		70000498D1C56AE4FF4F0D7A23F6B552 /* EasyDi.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = EasyDi.debug.xcconfig; sourceTree = "<group>"; };
 		7686D2F266FC3410464644764CB0BD5E /* EasyDi.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = EasyDi.swift; path = Sources/EasyDi.swift; sourceTree = "<group>"; };
-		954C87529F60B3BC6D5F66A4C055BE37 /* Pods-IceCreamApp-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-IceCreamApp-acknowledgements.markdown"; sourceTree = "<group>"; };
-		991EF9F5DFFD8CCC1BB063D4EADA537F /* Pods-IceCreamDetail.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-IceCreamDetail.modulemap"; sourceTree = "<group>"; };
+		7938EFE6BD794DC9882D8A794F20C385 /* Pods-IceCreamListing-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-IceCreamListing-acknowledgements.plist"; sourceTree = "<group>"; };
+		7D5DED3A62628756855D1C99859DAEEE /* Pods-IceCreamDetail-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-IceCreamDetail-acknowledgements.markdown"; sourceTree = "<group>"; };
+		7F6ACD17A2C4E340B0BD3B4B2F0FA605 /* Pods-IceCreamApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-IceCreamApp.release.xcconfig"; sourceTree = "<group>"; };
+		808F7DA414251A898F74B2FBD2E0865D /* Pods-IceCreamApp-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-IceCreamApp-dummy.m"; sourceTree = "<group>"; };
+		8176420E7A43BD024DE46DC73711E69F /* Pods-IceCreamApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-IceCreamApp.debug.xcconfig"; sourceTree = "<group>"; };
+		919CE06DD2DA392D45865E1E4F441E1E /* Pods-IceCreamDetail.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-IceCreamDetail.release.xcconfig"; sourceTree = "<group>"; };
 		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		9EF12760433E1009E9FBAF5AAF849E33 /* Pods-IceCreamApp-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-IceCreamApp-acknowledgements.plist"; sourceTree = "<group>"; };
 		A31315688F3D9D5597C94165D4A3F59E /* EasyDi-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "EasyDi-dummy.m"; sourceTree = "<group>"; };
-		B81EA6185B6A39523D5D10D7AE22BCEC /* Pods-IceCreamApp.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-IceCreamApp.modulemap"; sourceTree = "<group>"; };
-		B900AC8C59252688ADF03E5F2AAAF9AF /* Pods-IceCreamDetail-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-IceCreamDetail-dummy.m"; sourceTree = "<group>"; };
+		A3C8857A958830D06414A37C1C6A44D0 /* Pods-IceCreamDetail-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-IceCreamDetail-Info.plist"; sourceTree = "<group>"; };
+		A424D2A6D302EA46569E65DA5A8112A5 /* Pods-IceCreamDetail-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-IceCreamDetail-umbrella.h"; sourceTree = "<group>"; };
+		B979407898726B3751AECC68AE0D11F9 /* Pods-IceCreamApp-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-IceCreamApp-acknowledgements.markdown"; sourceTree = "<group>"; };
 		BE2389B324E207812084B8286758324D /* EasyDi-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "EasyDi-prefix.pch"; sourceTree = "<group>"; };
-		E88476ED33D79BF57D5D4E6B93D20750 /* Pods-IceCreamDetail-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-IceCreamDetail-Info.plist"; sourceTree = "<group>"; };
-		EB4F7BD393965E6393DD786216A293B0 /* Pods-IceCreamApp-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-IceCreamApp-Info.plist"; sourceTree = "<group>"; };
-		ECB303A5C1A229215FD9CFCCF620E7E8 /* Pods-IceCreamDetail-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-IceCreamDetail-umbrella.h"; sourceTree = "<group>"; };
+		C9A94265DFF1C0AD3E29FB03DB44AACB /* Pods-IceCreamListing-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-IceCreamListing-Info.plist"; sourceTree = "<group>"; };
+		E6A07B1BA51B3B4756AFEEC9C9F557B1 /* Pods-IceCreamListing.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-IceCreamListing.debug.xcconfig"; sourceTree = "<group>"; };
+		EAEF11E10748A75914DE4C344E7528A8 /* Pods-IceCreamListing-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-IceCreamListing-dummy.m"; sourceTree = "<group>"; };
+		EC59FF77DAFC158F5559B17EFF333DBB /* Pods-IceCreamListing-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-IceCreamListing-acknowledgements.markdown"; sourceTree = "<group>"; };
 		EE065AFC8A810E7976D4851C1E969989 /* EasyDi.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = EasyDi.framework; path = EasyDi.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		F827485AC52F85780267A9D4543B9465 /* Pods-IceCreamApp-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-IceCreamApp-dummy.m"; sourceTree = "<group>"; };
+		F90A80B256C2EC4532D9D8CDD9AB204E /* Pods_IceCreamListing.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_IceCreamListing.framework; path = "Pods-IceCreamListing.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
 		FE90F103B42A18D6D95886A778152946 /* Pods_IceCreamDetail.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_IceCreamDetail.framework; path = "Pods-IceCreamDetail.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -75,6 +94,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				4263F6F43D53B21F19BBDCC7E4E2EA27 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		481ED4A89A55C34FDE38796401C4B060 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				763E65150378940E77F150B64ED14A3B /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -115,44 +142,45 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
-		548D203A655926711B947E9C56DBF48B /* Pods-IceCreamApp */ = {
+		52E0E249AEF552E46224758F180E866C /* Pods-IceCreamDetail */ = {
 			isa = PBXGroup;
 			children = (
-				B81EA6185B6A39523D5D10D7AE22BCEC /* Pods-IceCreamApp.modulemap */,
-				954C87529F60B3BC6D5F66A4C055BE37 /* Pods-IceCreamApp-acknowledgements.markdown */,
-				9EF12760433E1009E9FBAF5AAF849E33 /* Pods-IceCreamApp-acknowledgements.plist */,
-				F827485AC52F85780267A9D4543B9465 /* Pods-IceCreamApp-dummy.m */,
-				4DC3C83AB6B3C75CF2D59A61E1B08033 /* Pods-IceCreamApp-frameworks.sh */,
-				EB4F7BD393965E6393DD786216A293B0 /* Pods-IceCreamApp-Info.plist */,
-				24473874C2E533A2C1417F31266996A4 /* Pods-IceCreamApp-umbrella.h */,
-				4D5A9B9C265F1F119439BE3EB02A7099 /* Pods-IceCreamApp.debug.xcconfig */,
-				365A0D75234255931B5DACECD5DFB990 /* Pods-IceCreamApp.release.xcconfig */,
-			);
-			name = "Pods-IceCreamApp";
-			path = "Target Support Files/Pods-IceCreamApp";
-			sourceTree = "<group>";
-		};
-		65D3BAEA632A4915B1677086A8E56EDD /* Pods-IceCreamDetail */ = {
-			isa = PBXGroup;
-			children = (
-				991EF9F5DFFD8CCC1BB063D4EADA537F /* Pods-IceCreamDetail.modulemap */,
-				16CBD23AA2E6F75670BFCAE734F6C864 /* Pods-IceCreamDetail-acknowledgements.markdown */,
-				0BCE64DAFE397D48912CC7E5E9B22373 /* Pods-IceCreamDetail-acknowledgements.plist */,
-				B900AC8C59252688ADF03E5F2AAAF9AF /* Pods-IceCreamDetail-dummy.m */,
-				E88476ED33D79BF57D5D4E6B93D20750 /* Pods-IceCreamDetail-Info.plist */,
-				ECB303A5C1A229215FD9CFCCF620E7E8 /* Pods-IceCreamDetail-umbrella.h */,
-				11D42D5597F620B451FBD5B41D518E39 /* Pods-IceCreamDetail.debug.xcconfig */,
-				47C23CB6E2B7ED819797859E9EC86E5F /* Pods-IceCreamDetail.release.xcconfig */,
+				3ABA72355838ED1F4210A0659F29F1B6 /* Pods-IceCreamDetail.modulemap */,
+				7D5DED3A62628756855D1C99859DAEEE /* Pods-IceCreamDetail-acknowledgements.markdown */,
+				41EDF0F823412A2744A48FE2E09194DA /* Pods-IceCreamDetail-acknowledgements.plist */,
+				1562F188DC58322081AA48B3FFF45D64 /* Pods-IceCreamDetail-dummy.m */,
+				A3C8857A958830D06414A37C1C6A44D0 /* Pods-IceCreamDetail-Info.plist */,
+				A424D2A6D302EA46569E65DA5A8112A5 /* Pods-IceCreamDetail-umbrella.h */,
+				361D0462C9150646F1787C88DB5368EC /* Pods-IceCreamDetail.debug.xcconfig */,
+				919CE06DD2DA392D45865E1E4F441E1E /* Pods-IceCreamDetail.release.xcconfig */,
 			);
 			name = "Pods-IceCreamDetail";
 			path = "Target Support Files/Pods-IceCreamDetail";
 			sourceTree = "<group>";
 		};
-		7B61D630DA27A7A287E333F818F5A5BA /* Targets Support Files */ = {
+		6182A64156AF4CA00BD5580BFCAF0448 /* Pods-IceCreamApp */ = {
 			isa = PBXGroup;
 			children = (
-				548D203A655926711B947E9C56DBF48B /* Pods-IceCreamApp */,
-				65D3BAEA632A4915B1677086A8E56EDD /* Pods-IceCreamDetail */,
+				6F759CD9C7DDA194F1222C729C090FBE /* Pods-IceCreamApp.modulemap */,
+				B979407898726B3751AECC68AE0D11F9 /* Pods-IceCreamApp-acknowledgements.markdown */,
+				409A1B13249FA4535A93282521B351C0 /* Pods-IceCreamApp-acknowledgements.plist */,
+				808F7DA414251A898F74B2FBD2E0865D /* Pods-IceCreamApp-dummy.m */,
+				02D919C1C2B6E28259333C1AE155A11D /* Pods-IceCreamApp-frameworks.sh */,
+				45BAE95965970BBBB612B35B028D7873 /* Pods-IceCreamApp-Info.plist */,
+				1C7CE87B70FB4F049EF49F4CBA8B2895 /* Pods-IceCreamApp-umbrella.h */,
+				8176420E7A43BD024DE46DC73711E69F /* Pods-IceCreamApp.debug.xcconfig */,
+				7F6ACD17A2C4E340B0BD3B4B2F0FA605 /* Pods-IceCreamApp.release.xcconfig */,
+			);
+			name = "Pods-IceCreamApp";
+			path = "Target Support Files/Pods-IceCreamApp";
+			sourceTree = "<group>";
+		};
+		8877B73365A9279082B6709CCB6BAA47 /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				6182A64156AF4CA00BD5580BFCAF0448 /* Pods-IceCreamApp */,
+				52E0E249AEF552E46224758F180E866C /* Pods-IceCreamDetail */,
+				E54B0FF440CECBFF1082B3117C172513 /* Pods-IceCreamListing */,
 			);
 			name = "Targets Support Files";
 			sourceTree = "<group>";
@@ -172,6 +200,17 @@
 			path = "../Target Support Files/EasyDi";
 			sourceTree = "<group>";
 		};
+		B2A0F4EF03C8B996DCE2EF2B4ABC7EE6 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				EE065AFC8A810E7976D4851C1E969989 /* EasyDi.framework */,
+				018C11B489600B3F4266DBE5F4AF532B /* Pods_IceCreamApp.framework */,
+				FE90F103B42A18D6D95886A778152946 /* Pods_IceCreamDetail.framework */,
+				F90A80B256C2EC4532D9D8CDD9AB204E /* Pods_IceCreamListing.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
 		C0834CEBB1379A84116EF29F93051C60 /* iOS */ = {
 			isa = PBXGroup;
 			children = (
@@ -186,8 +225,8 @@
 				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
 				D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */,
 				4FD690A922D4467FFC5729DDF9B965FE /* Pods */,
-				E8B271C19F2FF202B64C829CF219F398 /* Products */,
-				7B61D630DA27A7A287E333F818F5A5BA /* Targets Support Files */,
+				B2A0F4EF03C8B996DCE2EF2B4ABC7EE6 /* Products */,
+				8877B73365A9279082B6709CCB6BAA47 /* Targets Support Files */,
 			);
 			sourceTree = "<group>";
 		};
@@ -199,14 +238,20 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		E8B271C19F2FF202B64C829CF219F398 /* Products */ = {
+		E54B0FF440CECBFF1082B3117C172513 /* Pods-IceCreamListing */ = {
 			isa = PBXGroup;
 			children = (
-				EE065AFC8A810E7976D4851C1E969989 /* EasyDi.framework */,
-				018C11B489600B3F4266DBE5F4AF532B /* Pods_IceCreamApp.framework */,
-				FE90F103B42A18D6D95886A778152946 /* Pods_IceCreamDetail.framework */,
+				0EDC3D410011755C103DDEF3CE392E12 /* Pods-IceCreamListing.modulemap */,
+				EC59FF77DAFC158F5559B17EFF333DBB /* Pods-IceCreamListing-acknowledgements.markdown */,
+				7938EFE6BD794DC9882D8A794F20C385 /* Pods-IceCreamListing-acknowledgements.plist */,
+				EAEF11E10748A75914DE4C344E7528A8 /* Pods-IceCreamListing-dummy.m */,
+				C9A94265DFF1C0AD3E29FB03DB44AACB /* Pods-IceCreamListing-Info.plist */,
+				0C6F15140C842064BFD5501A38457E2A /* Pods-IceCreamListing-umbrella.h */,
+				E6A07B1BA51B3B4756AFEEC9C9F557B1 /* Pods-IceCreamListing.debug.xcconfig */,
+				486B9E2BCB6728CA44F10C7E03318287 /* Pods-IceCreamListing.release.xcconfig */,
 			);
-			name = Products;
+			name = "Pods-IceCreamListing";
+			path = "Target Support Files/Pods-IceCreamListing";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -217,6 +262,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				1D8CBE5905134E157BB1F633A2DD7BAD /* Pods-IceCreamApp-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2EE595A05ABE71FAB84860FDCFF93F3C /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BF02736AECDC116746DAC43416E3A87C /* Pods-IceCreamListing-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -277,6 +330,25 @@
 			productReference = 018C11B489600B3F4266DBE5F4AF532B /* Pods_IceCreamApp.framework */;
 			productType = "com.apple.product-type.framework";
 		};
+		664C7FDF29075E28FFFDDCFEE58AF9D3 /* Pods-IceCreamListing */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A5A879078827F34B284F3CA1F76E07A3 /* Build configuration list for PBXNativeTarget "Pods-IceCreamListing" */;
+			buildPhases = (
+				2EE595A05ABE71FAB84860FDCFF93F3C /* Headers */,
+				60716FD518A264697F7EBA595CE903CF /* Sources */,
+				481ED4A89A55C34FDE38796401C4B060 /* Frameworks */,
+				C6D118D2CD8A72CEE6232EC31C16301F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				85ADBAE59A5376615FBB4109372D88F6 /* PBXTargetDependency */,
+			);
+			name = "Pods-IceCreamListing";
+			productName = "Pods-IceCreamListing";
+			productReference = F90A80B256C2EC4532D9D8CDD9AB204E /* Pods_IceCreamListing.framework */;
+			productType = "com.apple.product-type.framework";
+		};
 		F16E0DD713AAB4501164ACC1E67208D7 /* EasyDi */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 64469BB8F6DA2E47E3D67505F93B9DB0 /* Build configuration list for PBXNativeTarget "EasyDi" */;
@@ -313,13 +385,14 @@
 				Base,
 			);
 			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
-			productRefGroup = E8B271C19F2FF202B64C829CF219F398 /* Products */;
+			productRefGroup = B2A0F4EF03C8B996DCE2EF2B4ABC7EE6 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
 				F16E0DD713AAB4501164ACC1E67208D7 /* EasyDi */,
 				510F33542F15A2E5BE691F821EE5DAA8 /* Pods-IceCreamApp */,
 				27D9667F5AC9790FB4C85C0F38EB4F1B /* Pods-IceCreamDetail */,
+				664C7FDF29075E28FFFDDCFEE58AF9D3 /* Pods-IceCreamListing */,
 			);
 		};
 /* End PBXProject section */
@@ -340,6 +413,13 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		65049025ACCAEB6C27E02E31E1FD27EB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C6D118D2CD8A72CEE6232EC31C16301F /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -374,6 +454,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		60716FD518A264697F7EBA595CE903CF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BB73B56CA258EB531EC44EDB17EF6212 /* Pods-IceCreamListing-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -389,12 +477,18 @@
 			target = F16E0DD713AAB4501164ACC1E67208D7 /* EasyDi */;
 			targetProxy = 7B9F4E4A2E85B555975B8192E853634B /* PBXContainerItemProxy */;
 		};
+		85ADBAE59A5376615FBB4109372D88F6 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = EasyDi;
+			target = F16E0DD713AAB4501164ACC1E67208D7 /* EasyDi */;
+			targetProxy = 6EAECCAD3F8F856518121161C00E0B77 /* PBXContainerItemProxy */;
+		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		2F115E4E4281668C9883594A7B2455B1 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 4D5A9B9C265F1F119439BE3EB02A7099 /* Pods-IceCreamApp.debug.xcconfig */;
+			baseConfigurationReference = 8176420E7A43BD024DE46DC73711E69F /* Pods-IceCreamApp.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
 				CODE_SIGN_IDENTITY = "";
@@ -431,7 +525,7 @@
 		};
 		32431B1E07550BD77630E753191C4410 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 365A0D75234255931B5DACECD5DFB990 /* Pods-IceCreamApp.release.xcconfig */;
+			baseConfigurationReference = 7F6ACD17A2C4E340B0BD3B4B2F0FA605 /* Pods-IceCreamApp.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
 				CODE_SIGN_IDENTITY = "";
@@ -504,7 +598,7 @@
 		};
 		40F09BD93F34DA4F534DFA546F4195CB /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 47C23CB6E2B7ED819797859E9EC86E5F /* Pods-IceCreamDetail.release.xcconfig */;
+			baseConfigurationReference = 919CE06DD2DA392D45865E1E4F441E1E /* Pods-IceCreamDetail.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
 				CODE_SIGN_IDENTITY = "";
@@ -542,7 +636,7 @@
 		};
 		54226E95CCD2BB5A30CBBF70A825FE00 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 11D42D5597F620B451FBD5B41D518E39 /* Pods-IceCreamDetail.debug.xcconfig */;
+			baseConfigurationReference = 361D0462C9150646F1787C88DB5368EC /* Pods-IceCreamDetail.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
 				CODE_SIGN_IDENTITY = "";
@@ -701,6 +795,43 @@
 			};
 			name = Debug;
 		};
+		9640C5011A5555A8E28333E67644E96F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E6A07B1BA51B3B4756AFEEC9C9F557B1 /* Pods-IceCreamListing.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-IceCreamListing/Pods-IceCreamListing-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-IceCreamListing/Pods-IceCreamListing.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
 		9B848CD1252443EE961D80C54AB56583 /* Release */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 3EAB84E0830541CF0ECF2CD31BFC9739 /* EasyDi.release.xcconfig */;
@@ -730,6 +861,44 @@
 				SKIP_INSTALL = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
 				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		F6B57B644B9013A7B45BF443305A5F3C /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 486B9E2BCB6728CA44F10C7E03318287 /* Pods-IceCreamListing.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-IceCreamListing/Pods-IceCreamListing-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-IceCreamListing/Pods-IceCreamListing.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
 				VERSIONING_SYSTEM = "apple-generic";
@@ -772,6 +941,15 @@
 			buildConfigurations = (
 				2F115E4E4281668C9883594A7B2455B1 /* Debug */,
 				32431B1E07550BD77630E753191C4410 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A5A879078827F34B284F3CA1F76E07A3 /* Build configuration list for PBXNativeTarget "Pods-IceCreamListing" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9640C5011A5555A8E28333E67644E96F /* Debug */,
+				F6B57B644B9013A7B45BF443305A5F3C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
