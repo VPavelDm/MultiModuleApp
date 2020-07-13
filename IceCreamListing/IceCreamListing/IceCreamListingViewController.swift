@@ -10,7 +10,7 @@ import UIKit
 
 public protocol IceCreamListingViewControllerDelegate: class {
     func loadIceCreams()
-    func openIceCream(at index: Int)
+    func openIceCream(_ id: String)
 }
 
 public class IceCreamListingViewController: UIViewController {
@@ -66,6 +66,6 @@ extension IceCreamListingViewController: UITableViewDelegate, UITableViewDataSou
     }
     
     public func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        delegate?.openIceCream(at: indexPath.row)
+        delegate?.openIceCream(viewModels[indexPath.row].id)
     }
 }

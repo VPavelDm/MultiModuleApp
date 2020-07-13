@@ -20,3 +20,9 @@ target 'IceCreamListing' do
   project 'IceCreamListing/IceCreamListing.xcodeproj'
   pod 'EasyDi'
 end
+
+target 'IceCreamNetwork' do
+  workspace 'IceCreamApp.xcworkspace'
+  project 'IceCreamNetwork/IceCreamNetwork.xcodeproj'
+  pod 'EasyDi'
+end

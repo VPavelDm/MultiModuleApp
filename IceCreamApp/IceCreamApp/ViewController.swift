@@ -9,18 +9,23 @@
 import UIKit
 import IceCreamListing
 import IceCreamDetail
+import IceCreamNetwork
 
 class ViewController: UIViewController {
-    private lazy var iceCreamDetailView: IceCreamDetailViewController = {
-        let view = IceCreamDetailDI.instance().view
-        view.delegate = self
-        return view
-    }()
+    private var iceCreamDetailView: IceCreamDetailViewController? {
+        didSet {
+            iceCreamDetailView?.delegate = self
+        }
+    }
     
     private lazy var iceCreamListingView: IceCreamListingViewController = {
         let view = IceCreamListingDI.instance().view
         view.delegate = self
         return view
+    }()
+    
+    private lazy var iceCreamNetwork: IceCreamNetworkManagerProtocol = {
+        IceCreamNetworkDI.instance().manager
     }()
     
     @IBAction func clickMeIsPressed(_ sender: Any) {
@@ -30,34 +35,41 @@ class ViewController: UIViewController {
 
 extension ViewController: IceCreamDetailViewControllerDelegate {
     func loadIceCream(id: String) {
+        iceCreamNetwork.loadIceCream(by: id) { [weak self] result in
+            switch result {
+            case .success(let iceCream):
+                let viewModel = IceCreamDetailViewModel(name: iceCream.name,
+                                                        image: iceCream.image)
+                self?.iceCreamDetailView?.iceCreamLoaded(viewModel)
+            default:
+                print("Print error")
+                break
+            }
+        }
     }
 }
 
 extension ViewController: IceCreamListingViewControllerDelegate {
-    func openIceCream(at index: Int) {
-        navigationController?.pushViewController(iceCreamDetailView, animated: true)
+    func openIceCream(_ id: String) {
+        iceCreamDetailView = IceCreamDetailDI.instance().view
+        iceCreamDetailView?.id = id
+        navigationController?.pushViewController(iceCreamDetailView!, animated: true)
     }
     
     func loadIceCreams() {
-        DispatchQueue.main.asyncAfter(deadline: .now() + .seconds(2)) { [weak self] in
-            let viewModel1 = IceCreamListingViewModel(name: "Вкусное мороженое",
-                                                      image: UIImage(named: "icecream")!)
-            let viewModel2 = IceCreamListingViewModel(name: "Мороженое в стаканчике",
-                                                      image: UIImage(named: "icecream1")!)
-            let viewModel3 = IceCreamListingViewModel(name: "Мороженое с лимоном",
-                                                      image: UIImage(named: "icecream2")!)
-            let viewModel4 = IceCreamListingViewModel(name: "Трипл мороженое",
-                                                      image: UIImage(named: "icecream3")!)
-            let viewModel5 = IceCreamListingViewModel(name: "Шоколадное мороженое",
-                                                      image: UIImage(named: "icecream4")!)
-            let viewModel6 = IceCreamListingViewModel(name: "Ванильное мороженое",
-                                                      image: UIImage(named: "icecream5")!)
-            
-            self?.iceCreamListingView.iceCreamsLoaded([viewModel1,
-                                                 viewModel2,
-                                                 viewModel3,
-                                                 viewModel4,
-                                                 viewModel5, viewModel6])
+        iceCreamNetwork.loadIceCreams { [weak self] result in
+            switch result {
+            case .success(let iceCreams):
+                let viewModels = iceCreams.map({ iceCream in
+                    IceCreamListingViewModel(id: iceCream.id,
+                                             name: iceCream.name,
+                                             image: iceCream.image)
+                })
+                self?.iceCreamListingView.iceCreamsLoaded(viewModels)
+            default:
+                print("Print error")
+                break
+            }
         }
     }
 }
