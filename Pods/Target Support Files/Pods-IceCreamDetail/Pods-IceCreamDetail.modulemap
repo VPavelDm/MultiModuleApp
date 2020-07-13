@@ -1,0 +1,6 @@
+framework module Pods_IceCreamDetail {
+  umbrella header "Pods-IceCreamDetail-umbrella.h"
+
+  export *
+  module * { export * }
+}

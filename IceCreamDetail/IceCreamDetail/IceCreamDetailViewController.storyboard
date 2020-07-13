@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="jU0-87-9Og">
+    <device id="retina3_5" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Ice Cream Detail View Controller-->
+        <scene sceneID="ncL-vU-2zP">
+            <objects>
+                <viewController id="jU0-87-9Og" customClass="IceCreamDetailViewController" customModule="IceCreamDetail" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="e7X-Tp-awG">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" alpha="0.0" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="24f-50-Pe6">
+                                <rect key="frame" x="80" y="40" width="160" height="160"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="24f-50-Pe6" secondAttribute="height" multiplier="1:1" id="O3u-sp-gSo"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" alpha="0.0" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Gxf-kp-iTl">
+                                <rect key="frame" x="133" y="208" width="54" height="27.5"/>
+                                <fontDescription key="fontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="25"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" alpha="0.0" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hhX-wF-yQb">
+                                <rect key="frame" x="135" y="243.5" width="50" height="30"/>
+                                <state key="normal" title="Купить"/>
+                                <connections>
+                                    <action selector="buyButtomIsPressed:" destination="jU0-87-9Og" eventType="touchUpInside" id="IOv-pc-g0H"/>
+                                </connections>
+                            </button>
+                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" animating="YES" style="medium" translatesAutoresizingMaskIntoConstraints="NO" id="MT6-1i-768">
+                                <rect key="frame" x="150" y="230" width="20" height="20"/>
+                            </activityIndicatorView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="24f-50-Pe6" firstAttribute="centerX" secondItem="Qwt-0A-K04" secondAttribute="centerX" id="Dhe-eO-qdi"/>
+                            <constraint firstItem="hhX-wF-yQb" firstAttribute="centerX" secondItem="Qwt-0A-K04" secondAttribute="centerX" id="HcL-6B-p7Y"/>
+                            <constraint firstItem="Gxf-kp-iTl" firstAttribute="top" secondItem="24f-50-Pe6" secondAttribute="bottom" constant="8" symbolic="YES" id="JJC-TK-rYi"/>
+                            <constraint firstItem="MT6-1i-768" firstAttribute="centerX" secondItem="Qwt-0A-K04" secondAttribute="centerX" id="JLv-aO-gAu"/>
+                            <constraint firstItem="Gxf-kp-iTl" firstAttribute="centerX" secondItem="24f-50-Pe6" secondAttribute="centerX" id="KUL-Pu-2np"/>
+                            <constraint firstItem="24f-50-Pe6" firstAttribute="leading" secondItem="Qwt-0A-K04" secondAttribute="leading" constant="80" id="PIa-ia-WFf"/>
+                            <constraint firstItem="MT6-1i-768" firstAttribute="centerY" secondItem="Qwt-0A-K04" secondAttribute="centerY" id="RB5-26-Ugl"/>
+                            <constraint firstItem="24f-50-Pe6" firstAttribute="centerY" secondItem="Qwt-0A-K04" secondAttribute="centerY" multiplier="0.5" id="bYT-ea-m08"/>
+                            <constraint firstItem="hhX-wF-yQb" firstAttribute="top" secondItem="Gxf-kp-iTl" secondAttribute="bottom" constant="8" symbolic="YES" id="t5A-Lf-gV2"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="Qwt-0A-K04"/>
+                    </view>
+                    <connections>
+                        <outlet property="activityIndicator" destination="MT6-1i-768" id="KPp-pC-oTL"/>
+                        <outlet property="buyButton" destination="hhX-wF-yQb" id="Gca-dl-uRf"/>
+                        <outlet property="iceCreamImage" destination="24f-50-Pe6" id="uwJ-K6-lHe"/>
+                        <outlet property="iceCreamName" destination="Gxf-kp-iTl" id="VjW-or-I5q"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="DBu-5e-TIZ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="0.0" y="3"/>
+        </scene>
+    </scenes>
+</document>
