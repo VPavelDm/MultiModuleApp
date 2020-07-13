@@ -10,6 +10,8 @@
 		C552E0318682DE9C6D881C2A /* Pods_IceCreamApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0CB9C76A6733A1A32D522010 /* Pods_IceCreamApp.framework */; };
 		E92B6E9224BCD41900506FD1 /* IceCreamListing.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E92B6E9124BCD41900506FD1 /* IceCreamListing.framework */; };
 		E92B6EB524BCE0B700506FD1 /* IceCreamNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E92B6EB424BCE0B700506FD1 /* IceCreamNetwork.framework */; };
+		E92B6EB724BCE69A00506FD1 /* ViewController+IceCreamDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = E92B6EB624BCE69A00506FD1 /* ViewController+IceCreamDetail.swift */; };
+		E92B6EB924BCE6E800506FD1 /* ViewController+IceCreamListing.swift in Sources */ = {isa = PBXBuildFile; fileRef = E92B6EB824BCE6E800506FD1 /* ViewController+IceCreamListing.swift */; };
 		E95697E324BCC7FC0054A0F3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E95697E224BCC7FC0054A0F3 /* AppDelegate.swift */; };
 		E95697E524BCC7FC0054A0F3 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E95697E424BCC7FC0054A0F3 /* SceneDelegate.swift */; };
 		E95697E724BCC7FC0054A0F3 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E95697E624BCC7FC0054A0F3 /* ViewController.swift */; };
@@ -25,6 +27,8 @@
 		2FCB85F7FA42B546BFC23E79 /* Pods-IceCreamApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IceCreamApp.debug.xcconfig"; path = "../../Pods/Target Support Files/Pods-IceCreamApp/Pods-IceCreamApp.debug.xcconfig"; sourceTree = "<group>"; };
 		E92B6E9124BCD41900506FD1 /* IceCreamListing.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = IceCreamListing.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E92B6EB424BCE0B700506FD1 /* IceCreamNetwork.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = IceCreamNetwork.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E92B6EB624BCE69A00506FD1 /* ViewController+IceCreamDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ViewController+IceCreamDetail.swift"; sourceTree = "<group>"; };
+		E92B6EB824BCE6E800506FD1 /* ViewController+IceCreamListing.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ViewController+IceCreamListing.swift"; sourceTree = "<group>"; };
 		E95697DF24BCC7FC0054A0F3 /* IceCreamApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = IceCreamApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E95697E224BCC7FC0054A0F3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E95697E424BCC7FC0054A0F3 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -95,6 +99,8 @@
 				E95697E224BCC7FC0054A0F3 /* AppDelegate.swift */,
 				E95697E424BCC7FC0054A0F3 /* SceneDelegate.swift */,
 				E95697E624BCC7FC0054A0F3 /* ViewController.swift */,
+				E92B6EB624BCE69A00506FD1 /* ViewController+IceCreamDetail.swift */,
+				E92B6EB824BCE6E800506FD1 /* ViewController+IceCreamListing.swift */,
 				E95697E824BCC7FC0054A0F3 /* Main.storyboard */,
 				E95697EB24BCC7FF0054A0F3 /* Assets.xcassets */,
 				E95697ED24BCC7FF0054A0F3 /* LaunchScreen.storyboard */,
@@ -218,9 +224,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E92B6EB724BCE69A00506FD1 /* ViewController+IceCreamDetail.swift in Sources */,
 				E95697E724BCC7FC0054A0F3 /* ViewController.swift in Sources */,
 				E95697E324BCC7FC0054A0F3 /* AppDelegate.swift in Sources */,
 				E95697E524BCC7FC0054A0F3 /* SceneDelegate.swift in Sources */,
+				E92B6EB924BCE6E800506FD1 /* ViewController+IceCreamListing.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
