@@ -15,7 +15,7 @@ public protocol IceCreamDetailViewControllerDelegate: class {
 public class IceCreamDetailViewController: UIViewController {
     // MARK: - Input
     public var id: String?
-    public func iceCreamLoaded(_ viewModel: IceCreamViewModel) {
+    public func iceCreamLoaded(_ viewModel: IceCreamDetailViewModel) {
         setupUI(viewModel)
     }
     // MARK: - Output
@@ -32,7 +32,7 @@ public class IceCreamDetailViewController: UIViewController {
     }
     
     // MARK: - Setup UI
-    private func setupUI(_ viewModel: IceCreamViewModel) {
+    private func setupUI(_ viewModel: IceCreamDetailViewModel) {
         iceCreamName.text = viewModel.name
         iceCreamImage.image = viewModel.image
         showContent()

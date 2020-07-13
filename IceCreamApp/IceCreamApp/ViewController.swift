@@ -34,6 +34,10 @@ extension ViewController: IceCreamDetailViewControllerDelegate {
 }
 
 extension ViewController: IceCreamListingViewControllerDelegate {
+    func openIceCream(at index: Int) {
+        navigationController?.pushViewController(iceCreamDetailView, animated: true)
+    }
+    
     func loadIceCreams() {
         DispatchQueue.main.asyncAfter(deadline: .now() + .seconds(2)) { [weak self] in
             let viewModel1 = IceCreamListingViewModel(name: "Вкусное мороженое",

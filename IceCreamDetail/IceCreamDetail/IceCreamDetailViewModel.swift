@@ -1,5 +1,5 @@
 //
-//  IceCreamViewModel.swift
+//  IceCreamDetailViewModel.swift
 //  IceCreamDetail
 //
 //  Created by Pavel Vaitsikhouski on 7/13/20.
@@ -8,7 +8,7 @@
 
 import UIKit
 
-public struct IceCreamViewModel {
+public struct IceCreamDetailViewModel {
     public let name: String
     public let image: UIImage
     

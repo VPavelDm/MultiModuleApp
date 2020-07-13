@@ -10,7 +10,7 @@
 		6BE64318A353405A458BEEA5 /* Pods_IceCreamDetail.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0DBF246DBB8D03E1A1C56C45 /* Pods_IceCreamDetail.framework */; };
 		E956980C24BCC9F90054A0F3 /* IceCreamDetailViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E956980B24BCC9F90054A0F3 /* IceCreamDetailViewController.storyboard */; };
 		E956980E24BCCA0C0054A0F3 /* IceCreamDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E956980D24BCCA0C0054A0F3 /* IceCreamDetailViewController.swift */; };
-		E956981024BCCB920054A0F3 /* IceCreamViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E956980F24BCCB920054A0F3 /* IceCreamViewModel.swift */; };
+		E956981024BCCB920054A0F3 /* IceCreamDetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E956980F24BCCB920054A0F3 /* IceCreamDetailViewModel.swift */; };
 		E956981224BCCC220054A0F3 /* IceCreamDetailDI.swift in Sources */ = {isa = PBXBuildFile; fileRef = E956981124BCCC220054A0F3 /* IceCreamDetailDI.swift */; };
 /* End PBXBuildFile section */
 
@@ -22,7 +22,7 @@
 		E956980424BCC84A0054A0F3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E956980B24BCC9F90054A0F3 /* IceCreamDetailViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = IceCreamDetailViewController.storyboard; sourceTree = "<group>"; };
 		E956980D24BCCA0C0054A0F3 /* IceCreamDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IceCreamDetailViewController.swift; sourceTree = "<group>"; };
-		E956980F24BCCB920054A0F3 /* IceCreamViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IceCreamViewModel.swift; sourceTree = "<group>"; };
+		E956980F24BCCB920054A0F3 /* IceCreamDetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IceCreamDetailViewModel.swift; sourceTree = "<group>"; };
 		E956981124BCCC220054A0F3 /* IceCreamDetailDI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IceCreamDetailDI.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -80,7 +80,7 @@
 				E956980424BCC84A0054A0F3 /* Info.plist */,
 				E956980B24BCC9F90054A0F3 /* IceCreamDetailViewController.storyboard */,
 				E956980D24BCCA0C0054A0F3 /* IceCreamDetailViewController.swift */,
-				E956980F24BCCB920054A0F3 /* IceCreamViewModel.swift */,
+				E956980F24BCCB920054A0F3 /* IceCreamDetailViewModel.swift */,
 				E956981124BCCC220054A0F3 /* IceCreamDetailDI.swift */,
 			);
 			path = IceCreamDetail;
@@ -193,7 +193,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E956980E24BCCA0C0054A0F3 /* IceCreamDetailViewController.swift in Sources */,
-				E956981024BCCB920054A0F3 /* IceCreamViewModel.swift in Sources */,
+				E956981024BCCB920054A0F3 /* IceCreamDetailViewModel.swift in Sources */,
 				E956981224BCCC220054A0F3 /* IceCreamDetailDI.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
