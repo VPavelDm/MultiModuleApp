@@ -18,6 +18,20 @@ public class IceCreamDetailViewController: UIViewController {
     public func iceCreamLoaded(_ viewModel: IceCreamDetailViewModel) {
         setupUI(viewModel)
     }
+    public func showError(_ error: Error) {
+        let alert = UIAlertController(title: "Ошибка",
+                                      message: error.localizedDescription,
+                                      preferredStyle: .alert)
+        let okAction = UIAlertAction(title: "Понятно", style: .default) { [weak self] _ in
+            alert.dismiss(animated: true) {
+                if let id = self?.id {
+                    self?.delegate?.loadIceCream(id: id)
+                }
+            }
+        }
+        alert.addAction(okAction)
+        present(alert, animated: true)
+    }
     // MARK: - Output
     public weak var delegate: IceCreamDetailViewControllerDelegate?
     // MARK: - Outlets

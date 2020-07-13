@@ -8,6 +8,13 @@
 
 import Foundation
 
-public enum IceCreamLoadingError: Error {
+public enum IceCreamLoadingError: Error, LocalizedError {
     case defaultError
+    
+    public var errorDescription: String? {
+        switch self {
+        case .defaultError:
+            return "Ошибка при загрузке. Попробуйте еще раз, пожалуйста"
+        }
+    }
 }

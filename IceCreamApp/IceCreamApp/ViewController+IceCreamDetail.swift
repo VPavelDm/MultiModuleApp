@@ -16,9 +16,8 @@ extension ViewController: IceCreamDetailViewControllerDelegate {
                 let viewModel = IceCreamDetailViewModel(name: iceCream.name,
                                                         image: iceCream.image)
                 self?.iceCreamDetailView?.iceCreamLoaded(viewModel)
-            default:
-                print("Print error")
-                break
+            case .failure(let error):
+                self?.iceCreamDetailView?.showError(error)
             }
         }
     }

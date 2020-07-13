@@ -24,10 +24,15 @@ class IceCreamNetworkManager: IceCreamNetworkManagerProtocol {
     }
     
     func loadIceCream(by id: String, completion: @escaping (Result<IceCreamTO, IceCreamLoadingError>) -> Void) {
+        let isError = arc4random() % 2 == 0
         DispatchQueue.global(qos: .background).asyncAfter(deadline: .now() + .seconds(2)) { [iceCreams] in
             DispatchQueue.main.async {
-                if let iceCream = iceCreams.first(where: { $0.id == id }) {
-                    completion(.success(iceCream))
+                if isError {
+                    completion(.failure(IceCreamLoadingError.defaultError))
+                } else {
+                    if let iceCream = iceCreams.first(where: { $0.id == id }) {
+                        completion(.success(iceCream))
+                    }
                 }
             }
         }
