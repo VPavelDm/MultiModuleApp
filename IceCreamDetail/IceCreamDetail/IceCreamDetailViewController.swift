@@ -12,13 +12,13 @@ public protocol IceCreamDetailViewControllerDelegate: class {
     func loadIceCream(id: String)
 }
 
-public class IceCreamDetailViewController: UIViewController {
+class IceCreamDetailViewController: UIViewController {
     // MARK: - Input
-    public var id: String?
-    public func iceCreamLoaded(_ viewModel: IceCreamDetailViewModel) {
+    var id: String?
+    func iceCreamLoaded(_ viewModel: IceCreamDetailViewModel) {
         setupUI(viewModel)
     }
-    public func showError(_ error: Error) {
+    func showError(_ error: Error) {
         let alert = UIAlertController(title: "Ошибка",
                                       message: error.localizedDescription,
                                       preferredStyle: .alert)
@@ -33,7 +33,7 @@ public class IceCreamDetailViewController: UIViewController {
         present(alert, animated: true)
     }
     // MARK: - Output
-    public weak var delegate: IceCreamDetailViewControllerDelegate?
+    weak var delegate: IceCreamDetailViewControllerDelegate?
     // MARK: - Outlets
     @IBOutlet weak var iceCreamImage: UIImageView!
     @IBOutlet weak var iceCreamName: UILabel!
@@ -69,7 +69,7 @@ public class IceCreamDetailViewController: UIViewController {
     }
     
     // MARK: - Lifecycle
-    public override func viewDidLoad() {
+    override func viewDidLoad() {
         super.viewDidLoad()
         hideContent()
         if let id = id {

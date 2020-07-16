@@ -11,9 +11,9 @@ import IceCreamDetail
 
 extension ViewController: IceCreamListingViewControllerDelegate {
     func openIceCream(_ id: String) {
-        iceCreamDetailView = IceCreamDetailDI.instance().view
-        iceCreamDetailView?.id = id
-        navigationController?.pushViewController(iceCreamDetailView!, animated: true)
+        iceCreamDetail = IceCreamDetailDI.instance()
+        iceCreamDetail?.id = id
+        navigationController?.pushViewController(iceCreamDetail!.view, animated: true)
     }
     
     func loadIceCreams() {

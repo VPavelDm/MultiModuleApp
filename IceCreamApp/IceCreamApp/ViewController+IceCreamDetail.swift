@@ -15,9 +15,9 @@ extension ViewController: IceCreamDetailViewControllerDelegate {
             case .success(let iceCream):
                 let viewModel = IceCreamDetailViewModel(name: iceCream.name,
                                                         image: iceCream.image)
-                self?.iceCreamDetailView?.iceCreamLoaded(viewModel)
+                self?.iceCreamDetail?.iceCreamLoaded(viewModel)
             case .failure(let error):
-                self?.iceCreamDetailView?.showError(error)
+                self?.iceCreamDetail?.showError(error)
             }
         }
     }

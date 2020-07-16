@@ -12,12 +12,11 @@ import IceCreamDetail
 import IceCreamNetwork
 
 class ViewController: UIViewController {
-    var iceCreamDetailView: IceCreamDetailViewController? {
+    var iceCreamDetail: IceCreamDetailDI? {
         didSet {
-            iceCreamDetailView?.delegate = self
+            iceCreamDetail?.delegate = self
         }
     }
-    
     lazy var iceCreamListingView: IceCreamListingViewController = {
         let view = IceCreamListingDI.instance().view
         view.delegate = self
